@@ -12,7 +12,7 @@ class MovieDetailsBloc extends Bloc<MovieDetailsEvents, MovieDetailsState> {
   MovieDetailsBloc(
     this.getMovieDetailUsesCase,
     this.getRecommendationUseCase,
-  ) : super(MovieDetailsState()) {
+  ) : super(const MovieDetailsState()) {
     ///Get Movie Details Event
     on<GetMovieDetailsEvent>((event, emit) async {
       final result = await getMovieDetailUsesCase(

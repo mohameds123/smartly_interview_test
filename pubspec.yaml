@@ -44,6 +44,8 @@ dependencies:
   carousel_slider: ^4.1.1
   google_fonts: ^3.0.1
   shimmer: ^2.0.0
+  sliding_clipped_nav_bar: ^3.0.0+3
+  advance_pdf_viewer: ^2.0.1
   hexcolor:
 
 

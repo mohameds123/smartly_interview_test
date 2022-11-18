@@ -74,7 +74,7 @@ class MoviesRemoteDataSource extends BaseMovieRemoteDataSource {
     Response response = await Dio().get(ApiConstance.recommendationPath(parameters.movieId));
     if (response.statusCode == 200) {
       return List<RecommendationModel>.from((response.data['results'] as List).map(
-            (e) => MovieModel.fromJson(e),
+            (e) => RecommendationModel.fromJson(e),
       ));
     } else {
       throw ServerException(errorModel: ErrorModel.fromJson(response.data));

@@ -2,7 +2,6 @@ import 'package:dartz/dartz.dart';
 import 'package:movies/Movies/data/datasourse/movies_remote_data_source.dart';
 import 'package:movies/Movies/domain/entities/movie.dart';
 import 'package:movies/Movies/domain/entities/movie_detail.dart';
-import 'package:movies/Movies/domain/entities/movie_detail.dart';
 import 'package:movies/Movies/domain/entities/recommendation.dart';
 import 'package:movies/Movies/domain/repo/base_movie_repo.dart';
 import 'package:movies/Movies/domain/usecase/get_movie_detail_usecase.dart';

@@ -15,9 +15,9 @@ class MovieState extends Equatable {
   const MovieState({
     this.nowPlayingMovies = const [],
     this.message = '',
-    this.nowPlayingState = RequestStates.loaded,
-    this.popularMoviesState = RequestStates.loaded,
-    this.topRatedState = RequestStates.loaded,
+    this.nowPlayingState = RequestStates.loading,
+    this.popularMoviesState = RequestStates.loading,
+    this.topRatedState = RequestStates.loading,
     this.popularMovies = const [],
     this.topRatedMovies = const [],
   });

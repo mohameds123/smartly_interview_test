@@ -14,7 +14,7 @@ class MovieBloc extends Bloc<MovieEvent, MovieState> {
 
   MovieBloc(this.getNowPlayingMoviesUseCase, this.getTopRatedMoviesUseCase,
       this.getPopularMoviesUseCase)
-      : super(MovieState()) {
+      : super(const MovieState()) {
     ///GetNowPlayingEvent
     on<GetNowPlayingEvent>((event, emit) async {
       final result = await getNowPlayingMoviesUseCase(const NoParameters());
