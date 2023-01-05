@@ -45,7 +45,7 @@ dependencies:
   google_fonts: ^3.0.1
   shimmer: ^2.0.0
   sliding_clipped_nav_bar: ^3.0.0+3
-  advance_pdf_viewer: ^2.0.1
+  shared_preferences: 2.0.15
   hexcolor:
 
 

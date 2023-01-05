@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies/core/service/service_locator.dart';
 import 'package:movies/core/utils/app_strings.dart';
 import 'package:movies/layout.dart';
+import 'core/app_theme/dark_theme.dart';
 
 void main() {
   ServiceLocator().init();
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: AppString.appName,
-      theme: ThemeData(),
+      theme:buildDarkTheme(),
       home: const AppLayout(),
     );
   }

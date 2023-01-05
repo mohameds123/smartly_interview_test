@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:movies/Movies/presentation/screens/movies_screen.dart';
-import 'package:movies/TVs/presentation/screens/tv_screen.dart';
+import 'package:movies/Store/presentation/screens/cart_screen.dart';
+import 'package:movies/Store/presentation/screens/home_screen.dart';
+import 'package:movies/Store/presentation/screens/payment_screen.dart';
 import 'package:sliding_clipped_nav_bar/sliding_clipped_nav_bar.dart';
 
 class AppLayout extends StatefulWidget {
@@ -46,20 +47,24 @@ class _MyHomePageState extends State<AppLayout> {
       ),
 
       bottomNavigationBar: SlidingClippedNavBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.grey.shade900,
         onButtonPressed: onButtonPressed,
         iconSize: 30,
         activeColor:  HexColor('AC8027'),
         selectedIndex: selectedIndex,
-        inactiveColor: Colors.black,
+        inactiveColor: Colors.white,
         barItems: <BarItem>[
           BarItem(
-            icon: Icons.movie,
-            title: 'Movies',
+            icon: Icons.home_filled,
+            title: 'Home',
           ),
           BarItem(
-            icon: Icons.tv,
-            title: 'TV',
+            icon: Icons.payment_rounded,
+            title: 'Payment',
+          ),
+          BarItem(
+            icon: Icons.shopping_cart,
+            title: 'Cart',
           ),
         ],
       ),
@@ -71,6 +76,7 @@ class _MyHomePageState extends State<AppLayout> {
 // icons size: 30 for MaterialIcons
 
 List<Widget> _listOfWidget = <Widget>[
- const MainMoviesScreen(),
-  const MainTvScreen(),
+ const HomeScreen(),
+  const PayMentScreen(),
+  CartScreen(),
 ];
